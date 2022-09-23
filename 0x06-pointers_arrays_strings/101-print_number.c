@@ -12,7 +12,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar(45);
+		putchar(45);
 		m = n * -1;
 	}
 	else
@@ -26,11 +26,11 @@ void print_number(int n)
 	while (d > 9)
 	{
 		d / = 10;
-		len *= 10;
+		len * = 10;
 	}
 
 	for (; len >= 1; len / = 10)
 	{
-		_putchar(((m / len) % 10) + 48);
+		putchar(((m / len) % 10) + 48);
 	}
 }
