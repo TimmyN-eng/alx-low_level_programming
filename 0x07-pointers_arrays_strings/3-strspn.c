@@ -7,7 +7,7 @@
  * Return: return count
  */
 
-unsigned int_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 
 {
 	int i, j;
@@ -21,7 +21,7 @@ unsigned int_strspn(char *s, char *accept)
 	while (str1[i] != '\0')
 	{
 		j = 0;
-		while (str2 [j] != '\0')
+		while (str1[i] != '\0')
 		{
 			if (str2[j] == str1[i])
 			{
